@@ -1,0 +1,34 @@
+1. Uppdatera systemet och installera vim
+   -------------------------------------
+   sudo apt-get update
+   sudo apt-get install vim
+
+2. Skapa förutsättningar för plugins med pathogen
+   ----------------------------------------------
+   mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+3. Installera plugins som pathogen kör
+   -----------------------------------
+   Navigera till bundle-mappen och kör:
+   git clone https://github.com/scrooloose/nerdtree.git
+   git clone https://github.com/klen/rope-vim.git
+   git submodule add https://github.com/msanders/snipmate.vim.git snipmate
+   git clone https://github.com/garbas/vim-snipmate.git
+   git clone https://github.com/honza/vim-snippets.git
+   git clone https://github.com/tomtom/tcomment_vim.git
+   git clone https://github.com/tomtom/tlib_vim.git
+   git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
+   git clone https://github.com/vim-scripts/pylint-mode.git
+   git clone https://github.com/tell-k/vim-autopep8.git
+   git clone --depth=1 https://github.com/scrooloose/syntastic.git
+
+4. Installera möjlighet att debugga pythonskript
+   ---------------------------------------------
+   sudo pip install ipython
+   sudo pip install ipdb
+
+5. Ta ner min vimrc fil
+   --------------------
+   Navigera till ~/.vim/ och kör:
+   git clone https://github.com/Pjotor87/VimRBPSetup.git
