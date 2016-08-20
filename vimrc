@@ -78,5 +78,23 @@ runtime bundles/tplugin_vim/macros/tplugin.vim
 "let g:autopep8_indent_size=2
 " Disable show diff window
 "let g:autopep8_disable_show_diff=1
+"
+" ////////////////////////////////////////////
+"
+" SimpylFold
+" ----------
+" No configuration is necessary. However, if you want to enable previewing of your folded classes' and functions' docstrings in the fold text, add the following to your .vimrc:
+" let g:SimpylFold_docstring_preview = 1
+
+" And if you don't want to see your docstrings folded, add this:
+" let g:SimpylFold_fold_docstring = 0
+
+" And if you don't want to see your imports folded, add this:
+" let g:SimpylFold_fold_import = 0
+
+" In order for SimpylFold to be properly loaded in certain cases, you'll have to add lines like the following to your .vimrc (see issue #27):
+" autocmd BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
+" autocmd BufWinLeave *.py setlocal foldexpr< foldmethod<
+" If you have the above options set to different values anywhere (e.g. setting foldmethod=syntax in .vimrc, SimpylFold won't work properly.
 
 " ////////////////////////////////////////////
