@@ -1,3 +1,9 @@
 - Fixa/Förstå hur man använder någon sorts autocomplete.
 - Fixa/Förstå hur man använder snippets som har installerats.
 - Sätt upp/Förstå keymapping för NERDTree
+- Installera Notes och skapa någon macro för att snabbt kunna ta anteckningar i nytt fönster för nuvarande fil
+
+Plugins att testa
+-----------------
+- SuperTab
+- Notes
