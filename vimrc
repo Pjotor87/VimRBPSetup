@@ -15,10 +15,10 @@ set number
 let mapleader = "-"
 
 " leader + b = set ipdb breakpoint
-nnoremap <leader>b oimport ipdb;ipdb.set_trace()
+nnoremap <leader>b 0iimport ipdb;ipdb.set_trace()<ENTER><Esc>k
 
-" leader + ctrl + b clear breakpoint (wipe the whole line clean but keep the \n)
-nnoremap <leader><C-b> 0d$
+" leader + ctrl + b + b = clear breakpoint
+nnoremap <leader>bb 0d$i<Del><Esc>
 
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
