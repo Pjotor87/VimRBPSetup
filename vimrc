@@ -11,15 +11,12 @@ set number
 " ***************
 " * Keymappings *
 " ***************
-" Map leader to '-' instead of '\'
+" Map leader to '-'
 let mapleader = "-"
-
 " leader + b = set ipdb breakpoint
 nnoremap <leader>b 0iimport ipdb;ipdb.set_trace()<ENTER><Esc>k
-
-" leader + ctrl + b + b = clear breakpoint
+" leader + b + b = clear breakpoint
 nnoremap <leader>bb 0d$i<Del><Esc>
-
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************
