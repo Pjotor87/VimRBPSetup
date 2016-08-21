@@ -45,15 +45,17 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # --------------------------------------
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/vim-scripts/pylint-mode.git ~/.vim/bundle/pylint-mode
-git clone https://github.com/klen/rope-vim.git ~/.vim/bundle/rope-vim
 git clone https://github.com/tmhedberg/SimpylFold.git ~/.vim/bundle/SimpylFold
 git clone --depth=1 https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
 git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment_vim
+
 git clone https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib_vim
 git clone https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/vim-addon-mw-utils
-git clone https://github.com/tell-k/vim-autopep8.git ~/.vim/bundle/autopep8
 git clone https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets
 git clone https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate
+git clone https://github.com/klen/rope-vim.git ~/.vim/bundle/rope-vim
+#git clone https://github.com/tell-k/vim-autopep8.git ~/.vim/bundle/autopep8
+#git clone https://github.com/nvie/vim-flake8.git ~/.vim/bundle/vim-flake8
 # 8. Ta ner min vimrc fil
 # -----------------------
 git clone https://github.com/Pjotor87/VimRBPSetup.git ~/.vim

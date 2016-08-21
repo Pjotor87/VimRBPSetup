@@ -14,9 +14,11 @@ set number
 " Map leader to '-'
 let mapleader = "-"
 " leader + b = set ipdb breakpoint
-nnoremap <leader>b 0iimport ipdb;ipdb.set_trace()<ENTER><Esc>k
+autocmd FileType python nnoremap <silent> <leader>b :t.;<Esc>kiimport ipdb;ipdb.set_trace()<Esc>ld$
 " leader + b + b = clear breakpoint
-nnoremap <leader>bb 0d$i<Del><Esc>
+autocmd FileType python nnoremap <silent> <leader>bb 0d$i<Del><Esc>
+" leader + F5 = Run
+autocmd FileType python nnoremap <silent> <F5> <Esc>:w<CR>:!clear;echo "Preparing to run the current python script via Vim.";echo "You will be returned to Vim when the script has finished executing.";python %<CR>
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************
@@ -33,8 +35,7 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 " ------
 let g:PyLintCWindow = 1
 let g:PyLintSigns = 1
-" Set this to 0 = Do not check when saving. Not set to 1 while using rspberry pi as development environment. 
-" I'd like to set this back to 1 in the future, but for now this makes the operation take long enough on each save for me to get annoyed.
+" Set this to 0 = The operation takes long enough to get me annoyed.
 let g:PyLintOnWrite = 0
 " let g:PyLintDissabledMessages = 'C0103,C0111,C0301,W0141,W0142,W0212,W0221,W0223,W0232,W0401,W0613,W0631,E1101,E1120,R0903,R0904,R0913'
 
