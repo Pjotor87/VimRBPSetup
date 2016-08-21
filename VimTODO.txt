@@ -1,0 +1,4 @@
+- Fixa/Förstå hur man använder någon sorts autocomplete.
+- Fixa/Förstå hur man använder snippets som har installerats.
+- Kolla om det går att sätta up så att F5 öppnar nytt fönster -> Tar markören dit -> Exekverar filen man jobbar med
+- Sätt upp/Förstå keymapping för NERDTree
