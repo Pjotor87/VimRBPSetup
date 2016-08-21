@@ -1,13 +1,14 @@
+echo "***************************************"
+echo "*** Running Vim installation script ***"
+echo "***************************************"
 # 1. Uppdatera systemet
 # ---------------------
 sudo apt-get --assume-yes update
-# 2. Installera Vim
+# 2. Installera Vim och Git
 # -----------------
 sudo apt-get --assume-yes install vim
-# 3. Installera Git
-# -----------------
 sudo apt-get --assume-yes install git
-# 4. Installera Python
+# 3. Installera Python
 # --------------------
 PYTHON_IS_INSTALLED=$(which python)
 if [ -z "$PYTHON_IS_INSTALLED" ]; then
@@ -15,7 +16,7 @@ if [ -z "$PYTHON_IS_INSTALLED" ]; then
 else
 	echo "Python detected. Skipping python installation."
 fi
-# 5. Installera Pip
+# 4. Installera Pip
 # -----------------
 # Get the version by running a short piece of python code
 PYTHON_VERSION_TUPLE=$( python -c 'import sys; print(sys.version_info[:])' )
@@ -32,36 +33,30 @@ elif [[ $PYTHON_VERSION == "(3,"* ]]; then
 else
 	echo "Python version unknown. Skipping pip installation."
 fi
-
-################TEST PASSED LINE##################
-
-# 6. Skapa förutsättningar för plugins med pathogen
-# -------------------------------------------------
-# mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-# curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
+# 5. Installera möjlighet att debugga pythonskript
+# ------------------------------------------------
+sudo pip install ipython
+sudo pip install ipdb
+# 6. Skapa förutsättningar för Vim plugins med pathogen
+# -----------------------------------------------------
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # 7. Installera plugins som pathogen kör
 # --------------------------------------
-#   Navigera till bundle-mappen och kör:
-#   git clone https://github.com/scrooloose/nerdtree.git
-#   git clone https://github.com/klen/rope-vim.git
-#   git submodule add https://github.com/msanders/snipmate.vim.git snipmate
-#   git clone https://github.com/garbas/vim-snipmate.git
-#   git clone https://github.com/honza/vim-snippets.git
-#   git clone https://github.com/tomtom/tcomment_vim.git
-#   git clone https://github.com/tomtom/tlib_vim.git
-#   git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
-#   git clone https://github.com/vim-scripts/pylint-mode.git
-#   git clone https://github.com/tell-k/vim-autopep8.git
-#   git clone --depth=1 https://github.com/scrooloose/syntastic.git
-#   git clone https://github.com/tmhedberg/SimpylFold.git
-
-# 8. Installera möjlighet att debugga pythonskript
-# ------------------------------------------------
-#   sudo pip install ipython
-#   sudo pip install ipdb
-
-# 9. Ta ner min vimrc fil
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/vim-scripts/pylint-mode.git ~/.vim/bundle/pylint-mode
+git clone https://github.com/klen/rope-vim.git ~/.vim/bundle/rope-vim
+git clone https://github.com/tmhedberg/SimpylFold.git ~/.vim/bundle/SimpylFold
+git clone --depth=1 https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
+git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment_vim
+git clone https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib_vim
+git clone https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/vim-addon-mw-utils
+git clone https://github.com/tell-k/vim-autopep8.git ~/.vim/bundle/autopep8
+git clone https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets
+git clone https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate
+# 8. Ta ner min vimrc fil
 # -----------------------
-#   Navigera till ~/.vim/ och kör:
-#   git clone https://github.com/Pjotor87/VimRBPSetup.git
+git clone https://github.com/Pjotor87/VimRBPSetup.git ~/.vim
+echo "****************************************"
+echo "*** Vim installation script finished ***"
+echo "****************************************"
