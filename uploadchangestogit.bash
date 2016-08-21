@@ -1,6 +1,5 @@
 git add uploadchangestogit.bash
 git add vimrc
-git add installguide.txt
 git add installscript.bash
 git add VimTODO.txt
 
