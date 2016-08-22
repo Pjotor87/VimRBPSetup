@@ -1,0 +1,13 @@
+Python
+------
+Sätt breakpoint: <leader>b
+Ta bort breakpoint: <leader>bb
+Ta bort alla breakpoints: ?
+
+Goto definition: 
+Kommentera/Avkommentera kodblock: 
+Starta NERDTree: :NERDTree
+Stäng NERDTree: 
+
+Sök: 
+Find and replace: 
