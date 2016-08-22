@@ -37,6 +37,8 @@ vmap <leader>uc g<
 map <leader>gd <C-c>g<Esc>zo<Esc>llllj
 " leader + r + n = Rename
 autocmd FileType python map <leader>rn <C-c>rr
+" leader + g + n = Global notes
+map <leader>gn :sp ~/.vim/GlobalNotes<Esc><C-w>J<Esc>3<C-w>_<Esc>
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************
