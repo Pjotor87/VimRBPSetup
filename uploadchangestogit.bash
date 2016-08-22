@@ -3,6 +3,7 @@ git add vimrc
 git add installscript.bash
 git add VimTODO.txt
 git add GlobalNotes
+git add bundle/vim-snippets
 
 git add uploadchangestogit.bash
 
