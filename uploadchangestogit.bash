@@ -1,7 +1,8 @@
+git add README.md
 git add vimrc
 git add installscript.bash
 git add VimTODO.txt
-git add VimHotKeys.txt
+git add GlobalNotes
 
 git add uploadchangestogit.bash
 

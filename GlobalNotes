@@ -1,0 +1,41 @@
+**********
+* Python *
+**********
+
+Allmänt
+*******
+Undo: u
+Redo: Ctrl + r
+
+Search
+------
+Find: /<term>
+Find next: n
+Find prev: N
+Find and replace: :%s/<findRegEx>/<replaceRegEx/g
+Find and replace med prompt: :%s/<findRegEx>/<replaceRegEx/gc
+
+Plugins
+*******
+
+Breakpoints
+-----------
+Sätt breakpoint: <leader>b
+Ta bort breakpoint: <leader>bb
+Ta bort alla breakpoints: <leader>bca
+
+NERDTree
+--------
+Starta/Stäng NERDTree: <leader>nt
+
+TComment
+* --------
+Toggle comment: <leader>tc
+Comment out selected text in visual mode: <leader>co
+Uncomment   selected text in visual mode: <leader>uc
+
+Rope
+----
+Code assist: <C-Space>
+Goto definition: <leader>gd
+Rename: <leader>rn
