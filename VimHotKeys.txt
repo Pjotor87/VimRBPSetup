@@ -1,13 +1,26 @@
-Python
-------
+**********
+* Python *
+**********
+
+Allmänt
+-------
+Sök: 
+Find and replace: 
+
+Breakpoints
+-----------
 Sätt breakpoint: <leader>b
 Ta bort breakpoint: <leader>bb
 Ta bort alla breakpoints: ?
 
-Goto definition: 
-Kommentera/Avkommentera kodblock: 
-Starta NERDTree: :NERDTree
-Stäng NERDTree: 
+NERDTree
+--------
+Starta/Stäng NERDTree: <leader>nt
 
-Sök: 
-Find and replace: 
+TComment
+--------
+Kommentera/Avkommentera kodblock: 
+
+Rope
+----
+Goto definition: 

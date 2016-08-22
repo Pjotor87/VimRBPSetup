@@ -13,6 +13,8 @@ set number
 " ***************
 " Map leader to '-'
 let mapleader = "-"
+" Toggle NERDTree
+map <leader>nt :NERDTreeToggle<CR>
 " leader + b = set ipdb breakpoint
 autocmd FileType python nnoremap <silent> <leader>b :t.;<Esc>kiimport ipdb;ipdb.set_trace()<Esc>ld$
 " leader + b + b = clear breakpoint
@@ -28,6 +30,8 @@ autocmd FileType python nnoremap <silent> <F5> <Esc>:w<CR>:!clear;echo "Preparin
 " --------
 " Start NERDTree whenever starting vim without arguments
 autocmd VimEnter * if !argc() | NERDTree | endif
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ////////////////////////////////////////////
 
