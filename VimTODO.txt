@@ -1,3 +1,5 @@
+- Ultisnip är installerat. Utforska hur det funkar.
+- Kolla vad andra rekommenderar att man mappar UltiSnips till istället för <tab>
 - Sätt upp python-snippet med template för ny pythonfil. (tmpl)
 - Sätt upp python-snippet som importerar från specifik plats.
 - Skapa macro <leader>ln (local notes). Skapar en ny buffer och öppnar ett fönster längst upp till höger.
