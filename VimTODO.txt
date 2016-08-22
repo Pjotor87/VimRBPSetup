@@ -6,3 +6,4 @@ Plugins att testa
 -----------------
 - SuperTab
 - https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/.vimrc
+- YouCompleteMe
