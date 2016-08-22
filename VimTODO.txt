@@ -1,8 +1,5 @@
-- Fixa/Förstå hur man använder någon sorts autocomplete.
-- Fixa/Förstå hur man använder snippets som har installerats.
 - Sätt upp python-snippet med template för ny pythonfil. (tmpl)
 - Sätt upp python-snippet som importerar från specifik plats.
-- Sätt upp/Förstå keymapping för NERDTree
 
 - Hitta något bra sätt att snabbt kunna ta anteckningar per fil. Kolla om det finns något som uppfyller de här kraven, annars bygg själv.
    o En plugin som skapar en anteckning direkt i Vim vore bra.

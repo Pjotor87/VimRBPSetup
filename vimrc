@@ -15,14 +15,28 @@ set number
 " ***************
 " Map leader to '-'
 let mapleader = "-"
-" Toggle NERDTree
-map <leader>nt :NERDTreeToggle<CR>
+" leader + c + l = Clear line
+map <leader>cl 0d$i<Del><Esc>
+" leader + t + n + t = Toggle NERDTree
+map <leader>tnt :NERDTreeToggle<CR>
 " leader + b = set ipdb breakpoint
 autocmd FileType python nnoremap <silent> <leader>b :t.;<Esc>kiimport ipdb;ipdb.set_trace()<Esc>ld$
 " leader + b + b = clear breakpoint
 autocmd FileType python nnoremap <silent> <leader>bb 0d$i<Del><Esc>
+" leader + b + c = clear all breakpoints
+autocmd FileType python nnoremap <silent> <leader>bca :g/import ipdb;ipdb.set_trace()$/d<CR><Esc>
 " leader + F5 = Run
 autocmd FileType python nnoremap <silent> <F5> <Esc>:w<CR>:!clear;echo "Preparing to run the current python script via Vim.";echo "You will be returned to Vim when the script has finished executing.";python %<CR>
+" leader + t + c = Toggle comments
+map <leader>tc gcc
+" In Visual mode: leader + c + o = Comment out selected lines
+vmap <leader>co g>
+" In Visual mode: leader + u + c = Uncomment selected lines
+vmap <leader>uc g<
+" leader + g + d = Goto definition
+map <leader>gd <C-c>g<Esc>zo<Esc>llllj
+" leader + r + n = Rename
+autocmd FileType python map <leader>rn <C-c>rr
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************

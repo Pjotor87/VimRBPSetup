@@ -12,7 +12,6 @@ Search
 Find: /<term>
 Find next: n
 Find prev: N
-Find all: 
 Find and replace: :%s/<findRegEx>/<replaceRegEx/g
 Find and replace med prompt: :%s/<findRegEx>/<replaceRegEx/gc
 
@@ -23,16 +22,20 @@ Breakpoints
 -----------
 Sätt breakpoint: <leader>b
 Ta bort breakpoint: <leader>bb
-Ta bort alla breakpoints: ?
+Ta bort alla breakpoints: <leader>bca
 
 NERDTree
 --------
 Starta/Stäng NERDTree: <leader>nt
 
 TComment
---------
-Kommentera/Avkommentera kodblock: 
+* --------
+Toggle comment: <leader>tc
+Comment out selected text in visual mode: <leader>co
+Uncomment   selected text in visual mode: <leader>uc
 
 Rope
 ----
-Goto definition: 
+Code assist: <C-Space>
+Goto definition: <leader>gd
+Rename: <leader>rn
