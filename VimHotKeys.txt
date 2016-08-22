@@ -3,9 +3,21 @@
 **********
 
 Allmänt
--------
-Sök: 
-Find and replace: 
+*******
+Undo: u
+Redo: Ctrl + r
+
+Search
+------
+Find: /<term>
+Find next: n
+Find prev: N
+Find all: 
+Find and replace: :%s/<findRegEx>/<replaceRegEx/g
+Find and replace med prompt: :%s/<findRegEx>/<replaceRegEx/gc
+
+Plugins
+*******
 
 Breakpoints
 -----------
