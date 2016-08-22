@@ -4,8 +4,11 @@ git add installscript.bash
 git add VimTODO.txt
 git add GlobalNotes
 
-cd bundle/vim-snippets
-git add *
+git add bundle
+cd bundle
+git add vim-snippets
+cd vim-snippets
+git add .
 cd ../..
 
 git add uploadchangestogit.bash
