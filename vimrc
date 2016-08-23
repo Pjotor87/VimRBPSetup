@@ -90,8 +90,3 @@ let g:UltiSnipsJumpForwardTrigger="<leader>sn"
 let g:UltiSnipsJumpBackwardTrigger="<leader>sp"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-" ****************
-" * Python Files *
-" ****************
-au BufNewFile *.py inewpy<leader>s
