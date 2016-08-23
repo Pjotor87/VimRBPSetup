@@ -1,5 +1,4 @@
 - Sätt upp python-snippet som importerar från specifik plats.
-- Kolla om det går att få undan custom snippets från python.snippets filen
 
 Plugins att testa
 -----------------
