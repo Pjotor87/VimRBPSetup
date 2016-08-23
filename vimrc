@@ -40,6 +40,9 @@ map <leader>gd <C-c>g<Esc>zo<Esc>llllj
 autocmd FileType python map <leader>rn <C-c>rr
 " leader + g + n = Global notes
 map <leader>gn :sp ~/.vim/GlobalNotes<Esc><C-w>J<Esc>3<C-w>_<Esc>
+" leader + q + n = Quick notes
+map <leader>qn :vsplit<CR><C-w>w:badd quicknotes<CR>:b quicknotes<CR>:vertical resize 29<CR>Gi
+" 20<C-w>_<Esc>i
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************
