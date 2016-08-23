@@ -4,6 +4,38 @@ priority -50
 #                            TEXTMATE SNIPPETS                            #
 ###########################################################################
 
+##########
+# CUSTOM #
+##########
+
+snippet newpy "Template for new python scripts" b
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+`!p 
+import re
+# re.compile('[^/]+$')
+snip.rv = "File: " + get_dir_and_file_name(snip).split('.')[1] + ".py"
+`
+Author: Peter Andersson
+Email: andersson.peter0@gmail.com
+Github: https://github.com/Pjotor87
+`!p
+import datetime
+snip.rv = "Created: " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+`
+Description: ${1:TODO: Write file description}
+"""
+
+${2}
+
+
+def main():
+	pass
+if __name__ == "__main__":
+	main()
+endsnippet
+
 #! header
 snippet #! "Shebang header for python scripts" b
 #!/usr/bin/env python

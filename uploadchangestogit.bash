@@ -5,7 +5,7 @@ git add VimTODO.txt
 git add GlobalNotes
 
 git add mysnippets/.
-git add bundle/vim-snippets/.
+git add bundle/vim-snippets/UltiSnips/python.snippets
 
 git add uploadchangestogit.bash
 

@@ -86,8 +86,13 @@ let g:SimpylFold_fold_import = 1
 " UltiSnips
 " ---------
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<leader>s"
+let g:UltiSnipsJumpForwardTrigger="<leader>sn"
+let g:UltiSnipsJumpBackwardTrigger="<leader>sp"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" ****************
+" * Python Files *
+" ****************
+au BufNewFile *.py inewpy<leader>s

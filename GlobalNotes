@@ -43,3 +43,9 @@ Rope
 Code assist: <C-Space>
 Goto definition: <leader>gd
 Rename: <leader>rn
+
+Snippets
+--------
+Unfold snippet: <snippetKeyword><leader>s
+next tabstop: <leader>sn
+prev tabstop: <leader>sp
