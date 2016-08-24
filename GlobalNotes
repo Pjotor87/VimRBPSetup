@@ -49,3 +49,9 @@ Snippets
 Unfold snippet: <snippetKeyword><leader>s
 next tabstop: <leader>sn
 prev tabstop: <leader>sp
+
+UltiSnips snippet syntax
+------------------------
+snippet <trigger> "<description>" <option>
+<implementation>
+endsnippet
