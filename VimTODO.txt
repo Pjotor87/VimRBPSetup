@@ -1,4 +1,4 @@
-- Sätt upp python-snippet som importerar från specifik plats.
+- Installera YouCompleteMe
 
 Plugins att testa
 -----------------

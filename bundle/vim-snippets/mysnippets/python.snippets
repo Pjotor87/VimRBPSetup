@@ -31,3 +31,16 @@ def main():
 if __name__ == "__main__":
 	main()
 endsnippet
+
+snippet subfimport "Import from subfolder" b
+# Imports needed to change import folder
+import os
+import sys
+import inspect
+# Imports from subdirectory START
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile(inspect.currentframe()))[0], "${1:SubfolderName}")))
+if cmd_subfolder not in sys.path:
+	sys.path.insert(0, cmd_subfolder)
+from ${2:FileName} import ${3:ClassName}  # noqa
+# Imports from subdirectory END
+endsnippet
