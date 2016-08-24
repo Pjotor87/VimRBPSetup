@@ -18,6 +18,8 @@ set number
 let mapleader = "-"
 " leader + c + l = Clear line
 map <leader>cl 0d$i<Del><Esc>
+" leader + c + f = Clear file
+map <leader>cf ggdG:call VIMRC_Prompt_Undo()<CR>
 " leader + t + n + t = Toggle NERDTree
 map <leader>tnt :NERDTreeToggle<CR>
 " leader + b = set ipdb breakpoint
@@ -41,7 +43,7 @@ autocmd FileType python map <leader>rn <C-c>rr
 " leader + g + n = Global notes
 map <leader>gn :sp ~/.vim/GlobalNotes<Esc><C-w>J<Esc>3<C-w>_<Esc>
 " leader + q + n = Quick notes
-map <leader>qn :vsplit<CR><C-w>w:badd quicknotes<CR>:b quicknotes<CR>:vertical resize 29<CR>Gi
+map <leader>qn :new quicknotes<CR>:vertical resize 29<CR>Gi
 " *******************************************
 " * Settings for plugins loaded by Pathogen *
 " *******************************************
@@ -91,3 +93,13 @@ let g:UltiSnipsJumpBackwardTrigger="<leader>sp"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+
+" *************
+" * Functions *
+" *************
+
+function VIMRC_Prompt_Undo()
+  if input('Keep changes? ("y" for yes. Something else for no): ') !=? "y"
+    normal u
+  endif
+endfunction
