@@ -8,18 +8,12 @@ snippet newpy "Template for new python scripts" b
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-`!p 
-import re
-# re.compile('[^/]+$')
-snip.rv = "File: " + snip.basename + ".py"
-`
+`!p snip.rv = "File: " + snip.basename + ".py"`
 Author: Peter Andersson
 Email: andersson.peter0@gmail.com
 Github: https://github.com/Pjotor87
-`!p
-import datetime
-snip.rv = "Created: " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-`
+`!p import datetime
+snip.rv = "Created: " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M")`
 Description: ${1:TODO: Write file description}
 """
 
