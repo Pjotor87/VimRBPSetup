@@ -57,7 +57,7 @@ git clone https://github.com/klen/rope-vim.git ~/.vim/bundle/rope-vim
 # git clone https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate
 # Ultisnips
 # ---------
-git clone git://github.com/SirVer/ultisnips.git  ~/.vim/bundle/ultisnips
+git clone https://github.com/SirVer/ultisnips.git  ~/.vim/bundle/ultisnips
 # Snippets
 # --------
 git clone https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets
